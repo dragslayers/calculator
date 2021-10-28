@@ -17,14 +17,15 @@ class calculator {
     }
 
     public static int puissance(int a, int b) {
-        if (b == 0) {
+        if (b == 1) {
             return a;
         }
-        return a * puissance(a, b--);
+        return a * puissance(a, b - 1);
     }
 
     public static void main(String[] args) {
         double x = division(5.0, 2.0);
-        System.out.println(x);
+        int y = puissance(3, 3);
+        System.out.println(y);
     }
 }
